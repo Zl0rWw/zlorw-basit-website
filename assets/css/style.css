@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+    --bg-color: #000;
+    --text-color: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+    text-decoration: none;
+    color: var(--text-color);
+    background: #000;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 50px;
+    margin: auto;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+.navbar li{
+    list-style: none;
+    margin: 0 10px;
+}
+.navbar li a {
+    color: #fff;
+    text-decoration:none;
+}
+/* Home Section styles */
+.main{
+    margin: 0 auto;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.main__content{
+    width: 100%;
+}
+
+.main__links-content{
+    width: 100%;
+}
+
+.main__content h1{
+    font-size: 4.0rem;
+    color: var(--text-color);
+}
+
+.types{
+    display: inline-block;
+    background: linear-gradient(145deg, rgba(154,64,255,1) 6%, rgba(224,164,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main__img--container{
+    padding-left: 100px;
+}
+
+.main__img--container img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.main__links-content i{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 16px;
+    padding: 0 9px;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+@media only screend and (max-width:959px) {
+    .main__container{
+        grid-template-columns: 1fr;
+    }
+    .main__img--container{
+        padding-left: 0;
+    }
+    .main__img--container img{
+        width: 200px;
+        height: 200px;
+    }
+}
